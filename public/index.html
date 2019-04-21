@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mongo Scraper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/materia/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Mongo Scraper</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/saved.html">Saved Articles</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <div class="overlay">
+  </div>
+  <div class="background-image">
+  </div>
+  <div class="caption">
+    <h1>Mongo Scraper</h1>
+    <p>New York Times Edition</p>
+  </div>
+</div>
+<div class="container-fluid article-container">
+  <!-- <div data-_id="5cba9d3c92c339001513791c" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/opinion/mueller-report-trump-russia.html">The Mueller Report and the Danger Facing American Democracy</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">A perceived victory for Russian interference poses a serious risk for the United States.</div>
+  </div>
+    <div data-_id="5cba9d3c92c339001513791e" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/business/pregnancy-work.html">When Life Hands You Lemons, Ask for the Moon</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">In the latest Work Friend, our columnist offers advice for women in the workplace who are getting less than they deserve.</div>
+  </div>
+    <div data-_id="5cba9d3c92c339001513791d" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/18/books/review/absent-hand-suzannah-lessard.html">A Meditation on Our Relationship to the Landscapes We Inhabit</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">In “The Absent Hand,” the writer Suzannah Lessard dissects a diverse swath of America, looking to understand the green expanses and urban sprawl that surround us.</div>
+  </div>
+    <div data-_id="5cba9d3c92c339001513791a" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/us/politics/justice-department-trump-attack-mueller.html">New Details Emerge of Law Enforcement Battered by TrumpReport Is Likely to Renew Scrutiny of Steele Dossier</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">The report revealed that some claims in the dossier appeared to be false while others were impossible to prove.</div>
+  </div>
+    <div data-_id="5cba9d3c92c339001513791b" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/business/meghan-markle-royal-baby-betting.html">Isn’t It Kind of Crass to Put Money Down on a Woman’s Pregnancy?</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">When that woman is Meghan Markle, and the baby is a Royal Baby, it’s “generally seen as harmless fun.”</div>
+  </div>
+    <div data-_id="5cba9d3c92c3390015137919" class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/19/us/politics/mueller-report-democrats-republicans.html">After the Mueller Report: A Subpoena and an Angry PresidentSanders Counterattacks After Report Reveals False StatementWhile Americans disagreed about the report’s meaning, one feeling was unanimous: disgust with the country’s leaders.</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">Sarah Huckabee Sanders, the White House press secretary, is seemingly unfazed by blows to her credibility.</div>
+  </div> -->
+   </div>
+
+<footer class="footer">
+  <div class="container">
+    <p>New York Times Mongo Scraper</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="/javascript/index.js"></script>
+
+</body>
+
+</html>
